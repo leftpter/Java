@@ -14,6 +14,7 @@ public class Demo {
 		}
 	}
 	
+	
 	public static void main(String[] args) {
 		final int[] array = {1, 2, 3, 0, -1, -2, -3};
 		FindSumTargetPairs finder = new AdvancedFindSumTargetPairs();
