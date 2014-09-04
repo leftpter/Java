@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<project name="Iterview" basedir="." default="main">
+
+    <property name="src.dir"     location="src"/>
+    <property name="test.dir"     location="tst"/>
+    <property name="docs.dir"     location="docs"/>
+
+    <property name="build.dir"   location="build"/>
+    <property name="classes.dir" location="${build.dir}/classes"/>
+    <property name="junit.classes.dir" location="${build.dir}/tst/classes"/>
+    <property name="jar.dir"     location="${build.dir}/jar"/>
+    <property name="report.dir"     location="${build.dir}/junit_report"/>
+
+    <path id="classpath">
+        <fileset dir="lib" includes ="**/*.jar"/>
+    </path>
+
+    <path id="junit.classpath">
+	<path refid="classpath"/>
+       	<fileset dir="lib/tst" includes ="**/*.jar"/>
+	<pathelement location="${classes.dir}" />
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${docs.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="junit.classpath"/>
+    </target>
+
+    <target name="compileTest" depends="compile">
+        <mkdir dir="${junit.classes.dir}"/>
+        <javac srcdir="${test.dir}" destdir="${junit.classes.dir}" classpathref="junit.classpath"/>
+    </target>
+
+    <target name="docs" depends="compile">
+        <mkdir dir="${docs.dir}"/>
+        <javadoc packagenames="com.peter.left.interview.dataStructure.*" sourcepath="${src.dir}" destdir="${docs.dir}" />
+	<fileset dir="${src.dir}" includes="**" />
+    </target>
+
+    <target name="junit" depends="clean,compileTest">
+	<mkdir dir="${report.dir}"/>
+        <junit printsummary="yes" fork="true" haltonfailure="no">
+            <classpath>
+                <path refid="junit.classpath"/>
+		<pathelement location="${junit.classes.dir}"/>
+            </classpath>
+            
+	    <formatter type="xml"/>
+
+            <batchtest fork="yes" todir="${report.dir}">
+                <fileset dir="${test.dir}" includes="**/*Test.java"/>
+            </batchtest>
+        </junit>
+    </target>
+
+    <target name="junitreport" depends="junit">
+        <junitreport todir="${report.dir}">
+            <fileset dir="${report.dir}" includes="TEST-*.xml"/>
+            <report todir="${report.dir}"/>
+        </junitreport>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+        </jar>
+    </target>
+
+    <target name="clean-build" depends="clean,jar"/>
+
+    <target name="main" depends="junitreport,jar"/>
+
+</project>
