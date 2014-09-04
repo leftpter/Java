@@ -1,4 +1,4 @@
-package com.peter.left.interview.dataStructure.wordBreak;
+package com.peter.left.interview.dataStructure.problems.wordBreak;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -9,6 +9,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.google.common.collect.Sets;
+import com.peter.left.interview.dataStructure.problems.wordBreak.StackWordBreaker;
+import com.peter.left.interview.dataStructure.problems.wordBreak.WordBreaker;
 
 
 public class StackWordBreakerTest

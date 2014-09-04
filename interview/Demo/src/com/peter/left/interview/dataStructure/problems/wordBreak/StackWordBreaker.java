@@ -1,4 +1,4 @@
-package com.peter.left.interview.dataStructure.wordBreak;
+package com.peter.left.interview.dataStructure.problems.wordBreak;
 
 import java.util.Set;
 import java.util.Stack;
