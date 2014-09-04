@@ -1,5 +1,6 @@
 package com.peter.left.demo;
 
+
 public class ComparableItem implements Comparable<ComparableItem> {
 	private final double value;
 	
