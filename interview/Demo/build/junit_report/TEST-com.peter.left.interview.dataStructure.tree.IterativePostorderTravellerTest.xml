@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="left" name="com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest" skipped="0" tests="9" time="0.219" timestamp="2014-09-02T22:58:22">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers" />
+    <property name="docs.dir" value="/home/peter/git_space/interview/Demo/docs" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/home/peter/Software/jdk1.8.0_20/jre/lib/resources.jar:/home/peter/Software/jdk1.8.0_20/jre/lib/rt.jar:/home/peter/Software/jdk1.8.0_20/jre/lib/sunrsasign.jar:/home/peter/Software/jdk1.8.0_20/jre/lib/jsse.jar:/home/peter/Software/jdk1.8.0_20/jre/lib/jce.jar:/home/peter/Software/jdk1.8.0_20/jre/lib/charsets.jar:/home/peter/Software/jdk1.8.0_20/jre/lib/jfr.jar:/home/peter/Software/jdk1.8.0_20/jre/classes" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="jar.dir" value="/home/peter/git_space/interview/Demo/build/jar" />
+    <property name="java.runtime.version" value="1.8.0_20-b26" />
+    <property name="user.name" value="peter" />
+    <property name="build.dir" value="/home/peter/git_space/interview/Demo/build" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/home/peter/Software/jdk1.8.0_20/jre/lib/i386" />
+    <property name="ant.project.default-target" value="main" />
+    <property name="ant.project.name" value="Iterview" />
+    <property name="java.version" value="1.8.0_20" />
+    <property name="user.timezone" value="America/Chicago" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="/home/peter/Software/jdk1.8.0_20/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="classes.dir" value="/home/peter/git_space/interview/Demo/build/classes" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/home/peter/Software/jdk1.8.0_20/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/home/peter/git_space/interview/Demo/build.xml" />
+    <property name="os.version" value="3.13.0-35-generic" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.20-b23" />
+    <property name="report.dir" value="/home/peter/git_space/interview/Demo/build/junit_report" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="user.home" value="/home/peter" />
+    <property name="ant.file.type.Iterview" value="file" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="/home/peter/git_space/interview/Demo/tst" />
+    <property name="java.library.path" value="/usr/java/packages/lib/i386:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/peter/git_space/interview/Demo/build/junit_report/TEST-com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest.xml crashfile=/home/peter/git_space/interview/Demo/junitvmwatcher1149855676468353865.properties propsfile=/home/peter/git_space/interview/Demo/junit7099658767792244895.properties" />
+    <property name="java.class.path" value="/home/peter/git_space/interview/Demo/lib/commons-lang3-3.3.2.jar:/home/peter/git_space/interview/Demo/lib/guava-17.0.jar:/home/peter/git_space/interview/Demo/lib/lombok.jar:/home/peter/git_space/interview/Demo/lib/tst/hamcrest-all-1.3.jar:/home/peter/git_space/interview/Demo/lib/tst/jmock-2.6.0.jar:/home/peter/git_space/interview/Demo/lib/tst/jmock-junit4-2.6.0.jar:/home/peter/git_space/interview/Demo/lib/tst/junit.jar:/home/peter/git_space/interview/Demo/build/classes:/home/peter/git_space/interview/Demo/build/tst/classes:/usr/share/ant/lib/junit.jar:/usr/share/java/ant-launcher-1.9.3.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.3 compiled on April 8 2014" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="os.arch" value="i386" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/home/peter/Software/jdk1.8.0_20/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/home/peter/git_space/interview/Demo" />
+    <property name="junit.classes.dir" value="/home/peter/git_space/interview/Demo/build/tst/classes" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Server VM" />
+    <property name="basedir" value="/home/peter/git_space/interview/Demo" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="ant.file.Iterview" value="/home/peter/git_space/interview/Demo/build.xml" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="src.dir" value="/home/peter/git_space/interview/Demo/src" />
+    <property name="ant.project.invoked-targets" value="main" />
+  </properties>
+  <testcase classname="com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest" name="travelRootOnlyHasLeftChild_itShould_returnSingletonList" time="0.113" />
+  <testcase classname="com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest" name="travelMultipleLevelTree_itShould_returnSingletonList" time="0.0" />
+  <testcase classname="com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest" name="travelSingletonTree_itShould_returnSingletonList" time="0.001" />
+  <testcase classname="com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest" name="travelRootOnlyHasRightChild_itShould_returnSingletonList" time="0.001" />
+  <testcase classname="com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest" name="travelNodesOnlyHasRightChild_itShould_returnSingletonList" time="0.001" />
+  <testcase classname="com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest" name="travelEmptyTree_itShould_returnEmptyList" time="0.003" />
+  <testcase classname="com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest" name="travelRootOnlyHasBothChild_itShould_returnSingletonList" time="0.0" />
+  <testcase classname="com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest" name="travelNodesOnlyHasOneChild_itShould_returnSingletonList" time="0.0" />
+  <testcase classname="com.peter.left.interview.dataStructure.tree.IterativePostorderTravellerTest" name="travelNodesOnlyHasLeftChild_itShould_returnSingletonList" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
